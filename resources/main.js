@@ -24,6 +24,7 @@ $(document).ready(function() {
                 var wikiurl = data[3][0];
                 //$('#output').prepend('<div class="jumbotron"><p><a href="' + wikiurl + '">' + tag + '</a></p><p>' + description + '</p></div>');
                 //output every possible definition
+                $('#output').html('');
                 for (var i = 0; i<data[1].length; i++){
                     $('#output').append('<div class="jumbotron"><p><a href="' + data[3][i] + '">' + data[1][i] + '</a></p><p>' + data[2][i] + '</p></div>');
                 }
